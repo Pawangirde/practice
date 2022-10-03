@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FORMS</title>
+</head>
+<style>
+    header {
+    margin: 19px auto;
+    border: 2px solid red;
+    width: 16rem;
+    display:inline-block;
+    box-sizing: border-box;
+}
+body{
+
+
+background-color: rgb(84, 245, 35);
+width: 100%;
+background-repeat: no-repeat;
+display: flex;
+
+
+}
+
+
+
+#address{
+    
+ font-weight: bold;
+  
+ 
+  margin: 20px;
+  background-color: #b072fa;
+    padding: 11px;
+   
+    max-width: 100%;
+}
+
+.name{
+    
+
+    background-color: salmon;
+    margin: 20px;
+    font-weight: bold;
+    padding: 11px;
+  background-size: 100%;
+   
+}
+.country{
+
+    background-color: #72d7fa;
+    margin: 20px;
+    font-weight: bold;
+    padding: 11px;
+   
+}
+button{
+    margin: 23px;
+    font-weight: bold;
+    padding: 4px;
+   border-radius: 50rem;
+width: 70px;
+}
+button:hover{
+    margin: 23px;
+    font-weight: bold;
+    padding: 5px;
+   border-radius: 12px;
+   background-color: rgb(223, 40, 20);
+
+}
+button:active{
+background-color: rgb(104, 22, 235);
+
+}
+button:visited{
+            background-color: yellow;
+        }
+
+
+@media screen and (max-width: 650px) {
+  .country, .name,#address, input[type=submit],input[type=rest]{
+width: 100%;
+    margin: 5px;
+    padding: 5px;
+  }
+}
+
+
+
+
+
+
+</style>
+<body>
+    <header>
+<div class="name">
+
+<label for="Name">Full Name</label>
+<input type="text" name="Name" id="Name"> <hr>
+<label for="Email">Email</label>
+<input type="text" name="Name" id="Email"> <hr>
+<label for="Address">Address</label>
+<input type="text" name="Name" id="Address"> <hr>
+   
+</div>
+
+<div class="country">
+    <label for="Country">Country</label>
+   
+    <select name="Country" id="Country">
+<option value="India">India</option>
+<option value="Dubai">Dubai</option>
+<option value="America">America</option>
+
+
+</select><hr>
+
+</div>
+<div id="address">
+    <label for="About">About</label><br>
+<textarea name="About" id="About" cols="20" rows="5"></textarea>
+
+
+</div>
+
+<button type="reset">Reset</button>
+<button type="submit">Submit</button>
+
+
+
+
+    </header>
+</body>
+</html>
+
+
